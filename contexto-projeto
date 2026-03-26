@@ -1,0 +1,221 @@
+Crie um site simples, moderno e mobile-first chamado “Aumigos da Parada Inglesa”.
+🎯 Objetivo
+O site será um catálogo de cachorros disponíveis para adoção em uma praça local. Ele deve centralizar informações que hoje ficam espalhadas no WhatsApp e facilitar:
+1. Visualização rápida dos doguinhos
+2. Compartilhamento (principalmente via imagem)
+3. Contato direto via WhatsApp com quem está cuidando do animal
+🧩 Funcionalidades principais
+1. Listagem de doguinhos
+• Exibir cards simples com:
+• Foto
+• Nome (ou apelido, ex: “Caramelo da praça”)
+• Sexo (Macho/Fêmea)
+• Idade aproximada (ex: “~2 anos”)
+• Status:
+• 🏠 Lar temporário
+• 🚨 Ainda na rua
+• ❤️ Já adotado
+• Pequena descrição (máx 2 linhas)
+2. Página/Modal de detalhes
+Ao clicar em um doguinho:
+• Mostrar:
+• Fotos (1 ou mais)
+• Nome
+• Sexo
+• Idade aproximada
+• Porte (Pequeno/Médio/Grande)
+• Temperamento (ex: dócil, brincalhão, medroso)
+• Situação atual (rua / lar temporário)
+• Vacinação (Sim/Não/Desconhecido)
+• Castrado (Sim/Não/Desconhecido)
+• Tempo que está aguardando adoção
+• História/resumo
+• Nome do responsável
+• Botão principal:
+👉 “Falar no WhatsApp”
+(abrir link com número já preenchido + mensagem padrão)
+Mensagem padrão:
+“Oi! Vi o [nome do cachorro] no Aumigos da Parada Inglesa e tenho interesse em adotar 🐶”
+3. Geração de imagem para compartilhamento (FEATURE PRINCIPAL)
+Criar botão:
+👉 “Gerar imagem para compartilhar”
+Essa imagem deve:
+• Ser vertical (estilo Instagram story ou post)
+• Incluir:
+• Foto do cachorro
+• Nome
+• Sexo + idade
+• Status
+• 2-3 bullets com info (ex: dócil, vacinado, porte médio)
+• Texto chamativo: “Procura um lar ❤️”
+• Nome do projeto: “Aumigos da Parada Inglesa”
+• Design bonito, limpo e emocional
+• Botão para baixar a imagem
+(opcional bônus: gerar imagem com TODOS os doguinhos disponíveis)
+4. Estrutura de dados (simples)
+Pode usar mock (JSON local), com estrutura tipo:
+{
+
+  "id": "1",
+
+  "nome": "Caramelo",
+
+  "sexo": "Macho",
+
+  "idade": "2 anos",
+
+  "porte": "Médio",
+
+  "status": "Lar temporário",
+
+  "temperamento": "Dócil e brincalhão",
+
+  "vacinado": "Sim",
+
+  "castrado": "Não",
+
+  "tempo_espera": "3 semanas",
+
+  "descricao": "Encontrado na praça, muito carinhoso",
+
+  "responsavel_nome": "João",
+
+  "responsavel_whatsapp": "5511999999999",
+
+  "fotos": ["url1", "url2"]
+
+}
+ 
+5. Design / UX
+
+	•	Visual amigável, emocional, leve
+
+	•	Cores suaves (tons de bege, verde, marrom, branco)
+
+	•	Ícones simples (pode usar emoji)
+
+	•	Totalmente responsivo (mobile-first)
+
+	•	Interface extremamente simples (pessoas não técnicas vão usar)
+
+6. Stack sugerida
+
+	•	React + Next.js (App Router)
+
+OU
+
+	•	React simples (Vite)
+
+	•	Para gerar imagem:
+
+	•	usar HTML canvas ou biblioteca como html-to-image
+
+7. Extras simples (se possível)
+
+	•	Filtro por:
+
+	•	Status
+
+	•	Porte
+
+	•	Badge “Adotado” (com overlay na imagem)
+
+	•	Contador de quantos já foram adotados ❤️
+
+⚠️ Importante
+
+	•	Priorizar simplicidade (MVP rápido)
+
+	•	Código organizado e fácil de evoluir depois
+
+	•	Preparar estrutura para no futuro ter:
+
+	•	login de voluntários
+
+	•	cadastro de novos animais
+
+	•	integração com banco de dados
+
+🎁 Entrega esperada
+
+	•	Código completo do projeto
+
+	•	Componentes bem separados
+
+	•	Dados mockados
+
+	•	Instruções claras de como rodar
+
+💡 Nome do projeto
+
+“Aumigos da Parada Inglesa”
+
+🐶 Tom
+
+Leve, acolhedor e emocional — foco em aumentar adoções5. Design / UX
+
+	•	Visual amigável, emocional, leve
+
+	•	Cores suaves (tons de bege, verde, marrom, branco)
+
+	•	Ícones simples (pode usar emoji)
+
+	•	Totalmente responsivo (mobile-first)
+
+	•	Interface extremamente simples (pessoas não técnicas vão usar)
+
+6. Stack sugerida
+
+	•	React + Next.js (App Router)
+
+OU
+
+	•	React simples (Vite)
+
+	•	Para gerar imagem:
+
+	•	usar HTML canvas ou biblioteca como html-to-image
+
+7. Extras simples (se possível)
+
+	•	Filtro por:
+
+	•	Status
+
+	•	Porte
+
+	•	Badge “Adotado” (com overlay na imagem)
+
+	•	Contador de quantos já foram adotados ❤️
+
+⚠️ Importante
+
+	•	Priorizar simplicidade (MVP rápido)
+
+	•	Código organizado e fácil de evoluir depois
+
+	•	Preparar estrutura para no futuro ter:
+
+	•	login de voluntários
+
+	•	cadastro de novos animais
+
+	•	integração com banco de dados
+
+🎁 Entrega esperada
+
+	•	Código completo do projeto
+
+	•	Componentes bem separados
+
+	•	Dados mockados
+
+	•	Instruções claras de como rodar
+
+💡 Nome do projeto
+
+“Aumigos da Parada Inglesa”
+
+🐶 Tom
+
+Leve, acolhedor e emocional — foco em aumentar adoções
