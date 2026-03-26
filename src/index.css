@@ -13,7 +13,7 @@
 
   --status-rua: #dc2626;
   --status-lar: #16a34a;
-  --status-adotado: #db2777;
+  --status-adotado: #A0826D;
 
   --radius: 14px;
   --radius-sm: 8px;
@@ -308,8 +308,13 @@ body {
   max-height: 95vh;
   border-radius: 18px 18px 0 0;
   overflow-y: auto;
+  overflow-x: hidden;
   animation: slideUp 0.28s cubic-bezier(0.32, 0.72, 0, 1);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 640px) {
@@ -344,22 +349,27 @@ body {
 
 .modal-photos {
   width: 100%;
-  height: 268px;
+  min-height: 320px;
+  max-height: 400px;
   overflow: hidden;
   background: #f4f4f5;
+  flex-shrink: 0;
 }
 .modal-photos img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  background: #f4f4f5;
 }
 
 .photo-gallery {
   display: flex;
   gap: 6px;
-  padding: 10px 20px 0;
+  padding: 12px 20px;
   overflow-x: auto;
+  flex-shrink: 0;
+  -webkit-overflow-scrolling: touch;
 }
 .photo-thumb {
   width: 54px;
@@ -384,6 +394,9 @@ body {
 
 .modal-body {
   padding: 20px 20px 32px;
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-status-badge {
@@ -501,7 +514,7 @@ body {
   padding: 14px;
   border-radius: var(--radius-sm);
   border: none;
-  background: #25d366;
+  background: #25D366;
   color: white;
   font-family: var(--font);
   font-size: 15px;

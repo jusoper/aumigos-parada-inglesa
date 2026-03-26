@@ -3,8 +3,9 @@ import { toPng } from 'html-to-image'
 
 const STATUS_CONFIG = {
   'Ainda na rua': { emoji: '🚨', label: 'Ainda na rua', color: '#dc2626' },
+  'Na rua': { emoji: '🚨', label: 'Na rua', color: '#dc2626' },
   'Lar temporário': { emoji: '🏠', label: 'Lar temporário', color: '#16a34a' },
-  Adotado: { emoji: '❤️', label: 'Adotado', color: '#db2777' },
+  Adotado: { emoji: '🤎', label: 'Adotado', color: '#A0826D' },
 }
 
 // All styles are inline so html-to-image captures them correctly
@@ -173,7 +174,7 @@ export default function ShareCard({ dog, onClose }) {
                 letterSpacing: '0.2px',
               }}
             >
-              Procura um lar ❤️
+              Procura um lar 🤎
             </div>
           </div>
         </div>

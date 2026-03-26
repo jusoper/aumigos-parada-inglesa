@@ -1,8 +1,9 @@
 const STATUS_OPTIONS = [
   { value: 'todos', label: 'Todos' },
   { value: 'Ainda na rua', label: '🚨 Na rua' },
+  { value: 'Na rua', label: '🚨 Na rua' },
   { value: 'Lar temporário', label: '🏠 Lar temp.' },
-  { value: 'Adotado', label: '❤️ Adotados' },
+  { value: 'Adotado', label: '🤎 Adotados' },
 ]
 
 const PORTE_OPTIONS = [

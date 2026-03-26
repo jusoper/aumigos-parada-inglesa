@@ -9,7 +9,7 @@ export default function StatsBar({ dogs }) {
         <span className="stat-label">Disponíveis</span>
       </div>
       <div className="stat">
-        <span className="stat-number">❤️ {adotados}</span>
+        <span className="stat-number">🤎 {adotados}</span>
         <span className="stat-label">Adotados</span>
       </div>
     </div>

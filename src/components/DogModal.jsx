@@ -4,7 +4,8 @@ import ShareCard from './ShareCard'
 const STATUS_CONFIG = {
   'Ainda na rua': { emoji: '🚨', label: 'Ainda na rua', color: '#e07b39' },
   'Lar temporário': { emoji: '🏠', label: 'Lar temporário', color: '#6b8f71' },
-  Adotado: { emoji: '❤️', label: 'Adotado', color: '#c25b6b' },
+  'Na rua': { emoji: '🚨', label: 'Na rua', color: '#e07b39' },
+  Adotado: { emoji: '🤎', label: 'Adotado', color: '#A0826D' },
 }
 
 const VACINADO_LABEL = {

@@ -9,6 +9,7 @@ import pandora3 from './images/pandora-3.jpg'
 import nenem1 from './images/nenem-1.jpg'
 import caramelo1 from './images/caramelo-1.jpg'
 import caramelo2 from './images/caramelo-2.jpg'
+import hades1 from './images/hades-1.jpg'
 
 export const dogs = [
   {
@@ -17,7 +18,7 @@ export const dogs = [
     sexo: 'Macho',
     idade: '~1 ano',
     porte: 'Médio',
-    status: 'Lar temporário',
+    status: 'Na rua',
     temperamento: 'Dócil',
     vacinado: 'Não',
     castrado: 'Não',
@@ -34,7 +35,7 @@ export const dogs = [
     sexo: 'Fêmea',
     idade: '~1 anos',
     porte: 'Grande',
-    status: 'Ainda na rua',
+    status: 'Na rua',
     temperamento: 'Dócil',
     vacinado: 'Não',
     castrado: 'Não',
@@ -51,7 +52,7 @@ export const dogs = [
     sexo: 'Fêmea',
     idade: '4 meses',
     porte: 'Grande',
-    status: 'Ainda na rua',
+    status: 'Na rua',
     temperamento: 'Dócil e brincalhona',
     vacinado: 'Não',
     castrado: 'Não',
@@ -67,17 +68,17 @@ export const dogs = [
     nome: 'Hades',
     sexo: 'Macho',
     idade: '4 meses',
-    porte: 'Pequeno',
+    porte: 'Grande',
     status: 'Adotado',
     temperamento: 'Brincalhão e curioso',
     vacinado: 'Não',
     castrado: 'Não',
     tempo_espera: '1 semana',
     descricao:
-      'Adotado ❤️',
+      'Adotado 🤎',
     responsavel_nome: 'Marina',
     responsavel_whatsapp: '5511998439950',
-    fotos: ['https://placedog.net/500/500?id=4'],
+    fotos: [hades1],
   },
   {
     id: '5',
@@ -85,13 +86,13 @@ export const dogs = [
     sexo: 'Macho',
     idade: 'Desconhecida',
     porte: 'Pequeno',
-    status: 'Ainda na rua',
+    status: 'Na rua',
     temperamento: 'Tímido e medroso',
     vacinado: 'Não',
     castrado: 'Não',
     tempo_espera: '2 semanas',
     descricao:
-      'Filhotinha cheia de energia! Ama explorar tudo e brincar sem parar. Ideal para quem quer um companheiro animado e sempre alegre.',
+      'Doguinho na praça.',
     responsavel_nome: 'Marina',
     responsavel_whatsapp: '5511998439950',
     fotos: [caramelo1, caramelo2],

@@ -1,7 +1,8 @@
 const STATUS_CONFIG = {
   'Ainda na rua': { emoji: '🚨', label: 'Na rua', cls: 'badge-rua' },
+  'Na rua': { emoji: '🚨', label: 'Na rua', cls: 'badge-rua' },
   'Lar temporário': { emoji: '🏠', label: 'Lar temporário', cls: 'badge-lar' },
-  Adotado: { emoji: '❤️', label: 'Adotado', cls: 'badge-adotado' },
+  Adotado: { emoji: '🤎', label: 'Adotado', cls: 'badge-adotado' },
 }
 
 export default function DogCard({ dog, onClick }) {
@@ -17,7 +18,7 @@ export default function DogCard({ dog, onClick }) {
         </span>
         {isAdotado && (
           <div className="dog-card-adopted-overlay">
-            <span className="dog-card-adopted-text">Adotado ❤️</span>
+            <span className="dog-card-adopted-text">Adotado 🤎</span>
           </div>
         )}
       </div>
