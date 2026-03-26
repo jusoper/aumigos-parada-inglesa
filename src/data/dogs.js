@@ -1,3 +1,15 @@
+// Importar imagens
+import willian1 from './images/willian-1.jpg'
+import willian2 from './images/willian-2.jpg'
+import willian3 from './images/willian-3.jpg'
+import willian4 from './images/willian-4.jpg'
+import pandora1 from './images/pandora-1.jpg'
+import pandora2 from './images/pandora-2.jpg'
+import pandora3 from './images/pandora-3.jpg'
+import nenem1 from './images/nenem-1.jpg'
+import caramelo1 from './images/caramelo-1.jpg'
+import caramelo2 from './images/caramelo-2.jpg'
+
 export const dogs = [
   {
     id: '1',
@@ -12,12 +24,9 @@ export const dogs = [
     tempo_espera: '1 mês',
     descricao:
       'A dona não consegue ficar com ele, mas é um amorzinho! Muito dócil e adora carinho. Ele merece uma família que o ame muito!',
-    responsavel_nome: 'João',
-    responsavel_whatsapp: '5511999990001',
-    fotos: [
-      'https://placedog.net/500/500?id=1',
-      'https://placedog.net/500/500?id=11',
-    ],
+    responsavel_nome: 'Marina',
+    responsavel_whatsapp: '5511998439950',
+    fotos: [willian1, willian2, willian3, willian4],
   },
   {
     id: '2',
@@ -32,9 +41,9 @@ export const dogs = [
     tempo_espera: '1 mês',
     descricao:
       'Pitmonster, deu ninhada há 4 meses. A dona não consegue ficar com ela, mas é super dócil.',
-    responsavel_nome: 'Maria',
-    responsavel_whatsapp: '5511999990002',
-    fotos: ['https://placedog.net/500/500?id=2'],
+    responsavel_nome: 'Marina',
+    responsavel_whatsapp: '5511998439950',
+    fotos: [pandora1, pandora2, pandora3],
   },
   {
     id: '3',
@@ -49,12 +58,9 @@ export const dogs = [
     tempo_espera: '1 mês',
     descricao:
       'Uma nenê filha de uma pitmonster e um caramelo. A dona não consegue ficar com ela, mas é super dócil e adora brincar.',
-    responsavel_nome: 'Carlos',
-    responsavel_whatsapp: '5511999990003',
-    fotos: [
-      'https://placedog.net/500/500?id=3',
-      'https://placedog.net/500/500?id=13',
-    ],
+    responsavel_nome: 'Marina',
+    responsavel_whatsapp: '5511998439950',
+    fotos: [nenem1],
   },
   {
     id: '4',
@@ -69,8 +75,8 @@ export const dogs = [
     tempo_espera: '1 semana',
     descricao:
       'Adotado ❤️',
-    responsavel_nome: 'Ana',
-    responsavel_whatsapp: '5511999990004',
+    responsavel_nome: 'Marina',
+    responsavel_whatsapp: '5511998439950',
     fotos: ['https://placedog.net/500/500?id=4'],
   },
   {
@@ -86,8 +92,8 @@ export const dogs = [
     tempo_espera: '2 semanas',
     descricao:
       'Filhotinha cheia de energia! Ama explorar tudo e brincar sem parar. Ideal para quem quer um companheiro animado e sempre alegre.',
-    responsavel_nome: 'Ana',
-    responsavel_whatsapp: '5511999990004',
-    fotos: ['https://placedog.net/500/500?id=4'],
+    responsavel_nome: 'Marina',
+    responsavel_whatsapp: '5511998439950',
+    fotos: [caramelo1, caramelo2],
   },
 ]
