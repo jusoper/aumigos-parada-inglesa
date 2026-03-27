@@ -293,6 +293,7 @@ body {
   justify-content: center;
   animation: fadeIn 0.2s ease;
   overflow: hidden;
+  touch-action: none;
 }
 
 @media (min-width: 640px) {
@@ -307,7 +308,6 @@ body {
   width: 100%;
   max-width: 540px;
   max-height: 95vh;
-  height: 95vh;
   border-radius: 18px 18px 0 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -315,13 +315,14 @@ body {
   position: relative;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 
 @media (min-width: 640px) {
   .modal {
     border-radius: 18px;
     max-height: 90vh;
-    height: auto;
   }
 }
 
@@ -349,7 +350,13 @@ body {
 }
 
 .modal-body {
-  padding: 20px 20px 32px;
+  padding: 24px 20px 40px;
+}
+
+@media (min-width: 640px) {
+  .modal-body {
+    padding: 20px 20px 32px;
+  }
 }
 
 .photo-gallery-grid {

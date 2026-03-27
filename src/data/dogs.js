@@ -6,6 +6,8 @@ import willian4 from './images/willian-4.jpg'
 import pandora1 from './images/pandora-1.jpg'
 import pandora2 from './images/pandora-2.jpg'
 import pandora3 from './images/pandora-3.jpg'
+import nene1 from './images/nene-1.jpg'
+import nene2 from './images/nene-2.jpg'
 import nenem1 from './images/nenem-1.jpg'
 import caramelo1 from './images/caramelo-1.jpg'
 import caramelo2 from './images/caramelo-2.jpg'
@@ -61,7 +63,7 @@ export const dogs = [
       'Uma nenê filha de uma pitmonster e um caramelo. A dona não consegue ficar com ela, mas é super dócil e adora brincar.',
     responsavel_nome: 'Marina',
     responsavel_whatsapp: '5511998439950',
-    fotos: [nenem1],
+    fotos: [nene1, nene2, nenem1],
   },
   {
     id: '4',
