@@ -54,7 +54,7 @@ export const dogs = [
     sexo: 'Fêmea',
     idade: '4 meses',
     porte: 'Grande',
-    status: 'Na rua',
+    status: 'Adotada 🤎',
     temperamento: 'Dócil e brincalhona',
     vacinado: 'Não',
     castrado: 'Não',
