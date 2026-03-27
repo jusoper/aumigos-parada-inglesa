@@ -322,7 +322,6 @@ body {
   animation: slideUp 0.28s cubic-bezier(0.32, 0.72, 0, 1);
   position: relative;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
   overscroll-behavior: contain;
   touch-action: pan-y;
 }

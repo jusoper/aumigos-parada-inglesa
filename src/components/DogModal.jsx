@@ -29,13 +29,20 @@ export default function DogModal({ dog, onClose }) {
 
   // Scroll para o topo quando o modal abrir
   useEffect(() => {
-    if (modalRef.current) {
-      modalRef.current.scrollTop = 0
-    }
     // Bloquear scroll do body em mobile
     document.body.style.overflow = 'hidden'
+    
+    // Garantir que o modal comece do topo após a animação
+    const scrollTimer = setTimeout(() => {
+      if (modalRef.current) {
+        modalRef.current.scrollTop = 0
+        modalRef.current.scrollTo({ top: 0, behavior: 'auto' })
+      }
+    }, 50) // Pequeno delay para garantir que a animação iniciou
+    
     return () => {
       document.body.style.overflow = ''
+      clearTimeout(scrollTimer)
     }
   }, [])
 
