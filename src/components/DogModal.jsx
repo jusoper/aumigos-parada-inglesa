@@ -39,36 +39,33 @@ export default function DogModal({ dog, onClose }) {
             ✕
           </button>
 
-          {/* Main photo */}
-          <div className="modal-photos">
-            <img src={dog.fotos[currentPhoto]} alt={dog.nome} />
-          </div>
-
-          {/* Thumbnails */}
-          {dog.fotos.length > 1 && (
-            <div className="photo-gallery">
-              {dog.fotos.map((foto, i) => (
-                <div
-                  key={i}
-                  className={`photo-thumb${currentPhoto === i ? ' active' : ''}`}
-                  onClick={() => setCurrentPhoto(i)}
-                >
-                  <img src={foto} alt={`${dog.nome} foto ${i + 1}`} />
-                </div>
-              ))}
-            </div>
-          )}
-
           <div className="modal-body">
-            {/* Header */}
+            {/* Status */}
             <span
               className="modal-status-badge"
               style={{ background: status.color }}
             >
               {status.emoji} {status.label}
             </span>
+
+            {/* Nome */}
             <h2 className="modal-name">{dog.nome}</h2>
+
+            {/* Aguardando há */}
             <p className="modal-wait">⏳ Aguardando há {dog.tempo_espera}</p>
+
+            {/* Fotos em quadrado */}
+            <div className="photo-gallery-grid">
+              {dog.fotos.map((foto, i) => (
+                <div
+                  key={i}
+                  className={`photo-grid-item${currentPhoto === i ? ' active' : ''}`}
+                  onClick={() => setCurrentPhoto(i)}
+                >
+                  <img src={foto} alt={`${dog.nome} foto ${i + 1}`} />
+                </div>
+              ))}
+            </div>
 
             {/* Details grid */}
             <div className="modal-details">

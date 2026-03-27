@@ -8,12 +8,12 @@ import { dogs as allDogs } from './data/dogs'
 
 export default function App() {
   const [selectedDog, setSelectedDog] = useState(null)
-  const [filters, setFilters] = useState({ status: 'todos', porte: 'todos' })
+  const [filters, setFilters] = useState({ status: 'Na rua', porte: 'todos' })
 
   const filteredDogs = useMemo(
     () =>
       allDogs.filter((dog) => {
-        const statusMatch = filters.status === 'todos' || dog.status === filters.status
+        const statusMatch = dog.status === filters.status
         const porteMatch = filters.porte === 'todos' || dog.porte === filters.porte
         return statusMatch && porteMatch
       }),

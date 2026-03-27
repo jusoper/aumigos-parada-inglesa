@@ -311,8 +311,6 @@ body {
   overflow-x: hidden;
   animation: slideUp 0.28s cubic-bezier(0.32, 0.72, 0, 1);
   position: relative;
-  display: flex;
-  flex-direction: column;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
@@ -338,7 +336,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 20;
   color: white;
   font-weight: 700;
   transition: background 0.15s;
@@ -347,80 +345,65 @@ body {
   background: rgba(0, 0, 0, 0.55);
 }
 
-.modal-photos {
-  width: 100%;
-  min-height: 320px;
-  max-height: 400px;
-  overflow: hidden;
-  background: #f4f4f5;
-  flex-shrink: 0;
-}
-.modal-photos img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  background: #f4f4f5;
+.modal-body {
+  padding: 20px 20px 32px;
 }
 
-.photo-gallery {
-  display: flex;
-  gap: 6px;
-  padding: 12px 20px;
-  overflow-x: auto;
-  flex-shrink: 0;
-  -webkit-overflow-scrolling: touch;
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
 }
-.photo-thumb {
-  width: 54px;
-  height: 54px;
-  border-radius: 6px;
+
+.photo-grid-item {
+  aspect-ratio: 1;
+  border-radius: 10px;
   overflow: hidden;
-  flex-shrink: 0;
   cursor: pointer;
-  border: 2px solid transparent;
-  transition: border-color 0.15s;
-  opacity: 0.7;
+  border: 3px solid transparent;
+  transition: all 0.2s;
+  position: relative;
 }
-.photo-thumb.active {
+
+.photo-grid-item:hover {
+  transform: scale(0.98);
+}
+
+.photo-grid-item.active {
   border-color: var(--accent);
-  opacity: 1;
+  box-shadow: 0 0 0 2px var(--accent-light);
 }
-.photo-thumb img {
+
+.photo-grid-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.modal-body {
-  padding: 20px 20px 32px;
-  flex: 1;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  display: block;
 }
 
 .modal-status-badge {
   display: inline-block;
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: 5px;
   font-size: 12px;
   font-weight: 700;
   color: white;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   letter-spacing: 0.2px;
 }
 .modal-name {
   font-size: 26px;
   font-weight: 800;
   color: var(--text);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   letter-spacing: -0.4px;
 }
 .modal-wait {
   font-size: 12px;
   color: var(--text-secondary);
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
 }
