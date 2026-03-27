@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import ShareCard from './ShareCard'
 
 const STATUS_CONFIG = {
@@ -23,8 +23,21 @@ const CASTRADO_LABEL = {
 export default function DogModal({ dog, onClose }) {
   const [currentPhoto, setCurrentPhoto] = useState(0)
   const [showShare, setShowShare] = useState(false)
+  const modalRef = useRef(null)
 
   const status = STATUS_CONFIG[dog.status] || STATUS_CONFIG['Ainda na rua']
+
+  // Scroll para o topo quando o modal abrir
+  useEffect(() => {
+    if (modalRef.current) {
+      modalRef.current.scrollTop = 0
+    }
+    // Bloquear scroll do body em mobile
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [])
 
   const whatsappMsg = encodeURIComponent(
     `Oi! Vi o ${dog.nome} no Aumigos da Parada Inglesa e tenho interesse em adotar 🐶`,
@@ -34,7 +47,7 @@ export default function DogModal({ dog, onClose }) {
   return (
     <>
       <div className="modal-overlay" onClick={onClose}>
-        <div className="modal" onClick={(e) => e.stopPropagation()}>
+        <div className="modal" ref={modalRef} onClick={(e) => e.stopPropagation()}>
           <button className="modal-close" onClick={onClose} aria-label="Fechar">
             ✕
           </button>

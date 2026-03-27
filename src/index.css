@@ -292,6 +292,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   animation: fadeIn 0.2s ease;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {
@@ -306,6 +307,7 @@ body {
   width: 100%;
   max-width: 540px;
   max-height: 95vh;
+  height: 95vh;
   border-radius: 18px 18px 0 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -319,6 +321,7 @@ body {
   .modal {
     border-radius: 18px;
     max-height: 90vh;
+    height: auto;
   }
 }
 
