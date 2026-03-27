@@ -8,10 +8,10 @@ export default function Header() {
         Aumigos da <span>Parada Inglesa</span>
       </h1>
       <p className="header-subtitle">
-        Cachorrinhos esperando uma segunda chance. Que tal dar um lar para um deles?
+        Adote um amigo de quatro patas!
       </p>
       <p className="header-footer">
-        Organizado por vizinhos da Parada Inglesa para facilitar a adoção de animais da região, sem fins lucrativos.
+        Iniciativa sem fins lucrativos dos vizinhos da Parada Inglesa
       </p>
     </header>
   )
