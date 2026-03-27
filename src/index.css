@@ -350,7 +350,7 @@ body {
 }
 
 .modal-body {
-  padding: 24px 20px 40px;
+  padding: 24px 20px 80px;
 }
 
 @media (min-width: 640px) {
